@@ -1,7 +1,7 @@
 def caching_fibonacci():
     
     cash = {}
-    def fibonacci(n):        
+    def fibonacci(n:int)->int:        
         if n <=0: return 0
         if n == 1: return 1
         if n in cash: return cash[n]
